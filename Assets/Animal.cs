@@ -2,62 +2,74 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour {
-
-public bool Key = false;
-
-void OnMouseDown()
+public class Animal : MonoBehaviour
 {
+
+    public bool Key;
+    public int Health = 3;
+    public bool BossKey;
 	
-	if(Key == true) 
-		print("Open Door");
+//My understanding of if statement vs else clause is that they work together to give two possibilities. If its true the program says/does this
+//if its not true then the program says/does that. I understand as well that an else clause is not necessary, if you leave on out it does nothing
+//on Zelda, once you have a key you just walk up to the door and the lock falls off, otherwise the door doesnt open and its pretty apparent that
+//you you need a key to enter. That is an example when an else clause really isnt necessary. Else clauses can do many things, if you have a game
+//that is a character builder, (like fallout) you have questions that are like, "If you were approached by a peasant, would you donate a coin or 
+//ignore them, you could use the if and else to add or decrease from your charisma or even your coins as well.
+//Overall there is so much you can do with just this simeple programing knowledge already.
+    void Start()
+    {
 
-	if(Name == "Dogo")
-	print("Dog is named Dogo");
+        if (Key)
+        {
+            print("I have the Key.");
+        }
+        else
+        {
+            print("You cannot pass without the Key");
+        }
 
-	if(FoodCount > 1)
-	print(Name + "is out of food");
+        if (Health > 0)
+        {
+            print("Still Alive.");
+        }
+        else
+        {
+            print("RIP!");
+        }
 
-	if(1 + 1 == 2)
-	print("True, 1 + 1 = 2");
+        if (Name == "Link")
+        {
+            print("Yes, his names Link.");
+        }
 
-	if(Math == 3)
-	print("Yes, it's 3");
+        else
+        {
+            print("Wrong, Link is his name.");
+        }
 
-	if(Dogsnameinspanish == "Perro")
-	print("Dog's name is in Spanish");
+        if (BossKey)
+        {
+            print("Prepare for battle!");
+        }
 
-	if(FoodCount < 1)
-	print("Dog has plenty of food");
-
-	if(Cat == "Gato")
-	print("Cat in spanish is Gato");
-	
-	if(Math > 2)
-	print(Math + "is larger than 2");
-
-	if(Math != 2)
-	print(Math + "is larger than 2");
-
-//if statements are pretty useful in my mind. They allow you to use the computer to say/do things with variables.
-//The example used was pretty helpful with the key, it made me think of a Zelda game where you need to find keys
-//to open doors which will eventually get you to the boss. The principle can be used in many different scenarios.
-//I feel like it will overall help shorten your code and make game functions more personable.
-
-
-	}
-
-
+        else
+        {
+            print("The Boss Key is necessary to enter.");
+        }
+		if (HeartMeter > 3)
+		{
+			print(Name + " is full on health.");
+		}
+		else
+		{
+			print(Name + " is low on food.");
+		}
+    }
 
 
 
-public string Name;
-public int FoodCount;
-public string Dogsnameinspanish;
-public float Math;
-public string Cat;
-
-	
-		
-	}
+    public string Name;
+    public int HeartMeter;
+  
+}
 

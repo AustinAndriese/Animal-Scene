@@ -139,11 +139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: 1
-  Name: Dogo
-  FoodCount: 0
-  Dogsnameinspanish: Perro
-  Math: 3
-  Cat: Gato
+  Health: 3
+  BossKey: 0
+  Name: Link
+  HeartMeter: 2
 --- !u!23 &255511959
 MeshRenderer:
   m_ObjectHideFlags: 0
