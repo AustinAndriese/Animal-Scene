@@ -11,6 +11,10 @@ public class ZELDA : MonoBehaviour {
     public string Password = "Hyrule";
     public int Potion;
     public int Damage;
+    //My understanding of Math Operators is pretty solid. Its just like math. You use () to split up what you are calculating. I used 
+    //examples showing all kinds of different scenarios and options. You can use +, -, /, *, and even % to show intergers. I am honestly
+    //unsure of why you would want to show intergers but im sure theres a reason its in here. Its just like, you have this much life,
+    //you took this much damage, now you have this much life left. Simple as that.
     void Start() {
     if((HeartMeter) - (Damage) < 0)
     {
