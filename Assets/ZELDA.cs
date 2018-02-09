@@ -9,24 +9,53 @@ public class ZELDA : MonoBehaviour {
     public string Name;
     public int HeartMeter;
     public string Password = "Hyrule";
+    public int Potion;
+    public int Damage;
     void Start() {
-        if(HeartMeter > 0 && HeartMeter == 3)
+    if((HeartMeter) - (Damage) < 0)
+    {
+        print("You are Dead");
+    }
+        else
         {
-            print("You are full health.");
-        }
-        if(Health < 3 && Health > 0)
-        {
-            print("You are low on health, restore soon.");
-        }
-        if(BossKey && Health > 2)
-        {
-            print("You are ready for batttle.");
-        }
-        if(Password == "Hyrule" || Password == "hyrule" || Password == "HYRULE");
-        {
-            print("You may enter!");
-        }
-
+        print("You're still alive");
+    }
+    if((Health) + (Potion) > 3)
+    {
+        print("You are full on health");
+    }
+    if(1 + 1 == 2)
+    {
+        print("yes, the answer is 2");
+    }
+    if(6 * 2 == 12)
+    {
+        print("Yep");
+    }
+    if(9 / 3 != 4)
+    {
+        print("The answer isnt 4");
+    }
+    if(16 % 5 == 1)
+    {
+        print("The interger is 1");
+    }
+    if((1 + 1) * (1 + 1) == 4)
+    {
+        print("Oh yeahhhhh");
+    }
+    if((2 * 2) - 1 == 3)
+    {
+        print("mmmhhhhh");
+    }
+    if(1 / 1 != 2)
+    {
+        print("Not that");
+    }
+    if(5 + 5 - 1 == 9)
+    {
+        print("Nice math bud");
+    }
     }
 }
 
